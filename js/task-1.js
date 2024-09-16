@@ -4,14 +4,11 @@ function isEnoughCapacity(products, containerSize){
     for(const keys in products){
        total+= products[keys];
     }
+       return total <= containerSize;
+           
+     
+  
     
-    
-    for(const keys in products){
-        if(total <= containerSize){
-            return true;
-        }
-        return false;
-    }
     
 }
 console.log(
